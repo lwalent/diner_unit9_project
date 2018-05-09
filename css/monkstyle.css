@@ -1,0 +1,216 @@
+
+
+body {
+	width: 100%;
+	background: white;
+	margin: 0 auto 2em;
+	font: 100%;
+	font-family: 'Lato', Arial, sans-serif;
+
+}
+
+/* Header */
+header {	
+	margin-bottom: 10px 0 0 10px;
+	background: rgb(0,0,128);
+}
+
+
+
+/* Navigation */
+
+#mainNav {	
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+#pageNav li {
+	margin-left: 32px;
+	list-style: none; 
+}
+
+#pageNav li a {	
+	text-decoration: none;
+	text-transform: capitalize;
+	color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(65,105,225);
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+
+
+
+
+section {
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding-top: 6px;
+}
+
+h1 {	
+	font-family: 'Audiowide', Arial, sans-serif;
+	text-align: center;
+	font-size: 300%;
+	color: white;
+}
+
+h2 {	
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	font-size: 200%;
+	color: white;
+}
+
+h3 {
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	font-size: 300%;
+	color: rgb(0,0,128);
+}
+
+h4 {
+	text-align: center;	
+}
+
+.reserveCol1 {
+	background: rgb(237, 228, 214);
+	height: 250px;
+	text-align: center;
+	padding: 20px;
+}
+
+.reserveCol2 {		
+	padding: 20px;
+	text-align: center;
+}
+
+.dine {
+	clear: both;
+}
+
+button {
+    background-color: rgb(65,105,225);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px #666;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(65,105,225);
+}
+
+.customerCol1 {
+	padding: 20px;
+	
+	margin: 20px;
+}
+
+.customerCol2 {
+	padding: 20px;
+	
+	margin: 20px;
+	
+}
+
+.quote {
+	font-family: 'Dancing Script', cursive;
+	font-size: 250%;
+
+	text-align: center;
+}
+
+/*footer*/
+footer {
+	line-height: 3em;
+	font-size: .7em;
+	padding: 0 4em;
+	margin: 20px;
+	
+	background: rgb(0,0,128);
+	clear: both;
+
+}
+footer p {
+	color: white;
+}
+
+.reservation-form {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.restaurant-locator {
+	height: 50vh;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+    
+h1 {	
+	font: 200%;
+	color: white;
+	padding-top: 5px;
+}
+
+section {
+	margin: 6px;
+	padding: 6px;
+}
+    
+.reserveCol1 {		
+		padding: 20 0 0 0;
+		float: none;
+	}
+
+.reserveCol2 {				
+		padding: 20 0 0 0;
+		float: none;
+	}
+
+.customerCol1 {
+		width: 100%;
+		padding: none;
+		float: none;
+		margin: none;
+	}
+
+.customerCol2 {		
+		width: 100%;
+		height: 200px;
+		padding: 20;
+		margin: none;
+		float: none;
+	}
+}

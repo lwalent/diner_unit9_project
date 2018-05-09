@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Unit 9 Project</title>
+	<link rel="stylesheet" type="text/css" href="css/monkstyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide|Dancing+Script|Lato" rel="stylesheet">
+</head>
+<body>
+
+	<header>		
+		<nav id="mainNav" class="cf">
+			<ul id="pageNav">				
+				<li><a href="#monkreservation">Reservations</a></li>
+				<li><a href="#monkmap">Location</a></li>				
+			</ul>
+		</nav>
+
+		<h1 id="mainTitle">Monk's Caf&eacute;</h1>
+
+		<h2 id="mainSubtitle">&quot;The Coffee Shop&quot;</h2>
+		<p><img src="images/toms-restaurant.jpg" alt="picture of Monk's Cafe" width="100%">
+		</p>
+	</header>
+
+	<section>
+		<h3 class="reserve">Reservations</h3>
+
+		<article class="reserveCol1">
+			<h4 class="makeRsv">Make a Reservation</h4>
+
+			<p>Our hours are Monday through Friday, 9:00 am to 9:00 pm and Saturday and Sunday, 9:00 pm to 1:00 am.</p >
+	
+			<form id="reserveForm" action="">
+				<p><input id="name" type="text" placeholder="Marilyn Monroe"></p>
+				<p><input id="day" type="text" placeholder="Select a Day"</p>
+				<p><button type="submit">Confirm Reservation</button></p>
+			</form>
+		</article>
+
+
+
+		<article id="monkreservation" class="reserveCol2">
+			<h4 class="confirmedRsv">Your reservation has been confirmed:</h4>
+				<table align="center">
+					<tr>
+						<th>Guest</th>
+						<th>Date</th>
+					</tr>
+					<tr>												
+						<td>form data will publish here</td>
+<!-- reservations -->
+						<script id="reservation-template" type="text/x-handlebars-template">						  
+						    <td>Nice to meet you, {{name}}</td>
+						    <td>We'll see you {{day}}</td>						    						  
+						</script>
+					<tr>					
+				</table>
+			</article>
+		</section>
+
+	<section id="monkmap" class="dine">
+		<h3>Come Dine with Us</h3>
+
+		<p align="center">Our location is so convenient. We look forward to serving you! </p>
+			<div id="map"></div>
+			
+	</section>
+
+	<section class="reviews">
+		<h3>Customer Reviews</h3>
+			<div class="customerCol1">
+				<p><img src="images/jerry.jpg" alt="Jerry Seinfeld at Monk's Cafe" width="100%"></p>
+			</div>
+			<div class="customerCol2">
+				<p class="quote"><i>&quot;Big lettuce, big carrots, tomatoes like volleyballs.&quot;</i></p>
+				<p align="center">Jerry Seinfeld, on <b>The Big Salad</b></p>
+			</div>
+	</section>
+ 	
+	
+	<footer>
+
+		<p>&copy; Copyright 2018 Tom's Diner</p>
+
+	</footer>
+
+	<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+	<script src="js/handlebars-v4.0.5.js"></script>
+	<script src="js/jquery-3.0.0.js"></script>	
+	<script src="js/main.js"></script>
+	<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3m--esOGf0H9piaT2pZDMMoU2E5TVSYs&callback=initMap"></script>
+
+</body>
+</html>
